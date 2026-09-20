@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4ede4;
+  color: #3a2c1a;
+  text-align: center;
+  padding: 30px 15px;
+  margin: 0;
+}
+
+h1 {
+  color: #7a3b2e;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #8a7660;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.humores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.btnHumor {
+  background: #ffffff;
+  color: #7a3b2e;
+  border: 2px solid #7a3b2e;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.btnHumor:hover {
+  background: #7a3b2e;
+  color: white;
+}
+
+.btnHumor.ativo {
+  background: #7a3b2e;
+  color: white;
+}
+
+#cartaoResultado {
+  max-width: 420px;
+  min-height: 140px;
+  margin: 30px auto 10px;
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#mensagemInicial {
+  color: #a3937c;
+  margin: 0;
+}
+
+.capaEmoji {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+#cartaoResultado h2 {
+  margin: 4px 0;
+  color: #7a3b2e;
+}
+
+.autor {
+  color: #8a7660;
+  font-style: italic;
+  margin: 4px 0 12px;
+}
+
+.sinopse {
+  font-size: 14px;
+  color: #5c4a38;
+  margin-bottom: 14px;
+}
+
+#btnOutro {
+  background: #cba15a;
+  color: #3a2c1a;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btnOutro:hover {
+  background: #b28c48;
+}
+
+#contador {
+  color: #8a7660;
+  font-size: 14px;
+}
+
+#contador strong {
+  color: #7a3b2e;
+}

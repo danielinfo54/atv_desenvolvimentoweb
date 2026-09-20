@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qual livro te escolhe hoje?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Qual livro te escolhe hoje?</h1>
+<p class="subtitulo">Escolha seu humor de agora e deixe o acaso escolher sua próxima leitura</p>
+
+<div class="humores">
+  <button class="btnHumor" data-humor="nostalgico">😌 Nostálgico</button>
+  <button class="btnHumor" data-humor="corajoso">🔥 Corajoso</button>
+  <button class="btnHumor" data-humor="relaxar">😴 Quero relaxar</button>
+  <button class="btnHumor" data-humor="curioso">🤔 Curioso</button>
+  <button class="btnHumor" data-humor="triste">🌧️ Meio pra baixo</button>
+</div>
+
+<div id="cartaoResultado">
+  <p id="mensagemInicial">Escolha um humor acima para começar!</p>
+</div>
+
+<p id="contador">Livros sorteados: <strong id="totalSorteios">0</strong></p>
+
+<script src="script.js"></script>
+</body>
+</html>
